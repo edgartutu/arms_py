@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##p=[]
 ##def even_or_odd(a=min,b=max,c=str):
 ##    for i in range (a,b+1):
@@ -33,3 +34,19 @@ def odd_even(a,b,category=None):
     print(odd_counter)
 odd_even(2,10,'even')
 
+=======
+def new_even_or_odd(minimum, maximum, category):
+    if category == 'even':
+        return len([number for number in range(minimum, maximum + 1) if number % 2 == 0])
+    elif category == 'odd':
+        return len([number for number in range(minimum, maximum + 1) if number % 2 == 0])
+    return None
+
+print(new_even_or_odd(2, 10, 'even'))
+
+# todo: Work this out
+# even_counter = 0
+# odd_counter = 0 
+# loop while checking if num is even -> increment even_counter
+# else loop while checking if num is odd -> increment odd_counter
+>>>>>>> 73bc45df30986a6c8ad8bb2156dc08662ee6a26b
