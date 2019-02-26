@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+##<<<<<<< HEAD
 ##p=[]
 ##def even_or_odd(a=min,b=max,c=str):
 ##    for i in range (a,b+1):
@@ -22,19 +22,6 @@
 ##odd_even(2,10,'even')
 ##print(len(p))
 
-
-
-def odd_even(a,b,category=None):
-    even_counter=0
-    odd_counter=0
-    for x in range(a,b+1):
-        even_counter +=1 if x%2==0  else 0
-        odd_counter+=1 if x%2!=0  else 0
-    print(even_counter)
-    print(odd_counter)
-odd_even(2,10,'even')
-
-=======
 def new_even_or_odd(minimum, maximum, category):
     if category == 'even':
         return len([number for number in range(minimum, maximum + 1) if number % 2 == 0])
@@ -42,11 +29,32 @@ def new_even_or_odd(minimum, maximum, category):
         return len([number for number in range(minimum, maximum + 1) if number % 2 == 0])
     return None
 
-print(new_even_or_odd(2, 10, 'even'))
+new_even_or_odd(2, 10, 'even')
 
-# todo: Work this out
-# even_counter = 0
-# odd_counter = 0 
-# loop while checking if num is even -> increment even_counter
-# else loop while checking if num is odd -> increment odd_counter
->>>>>>> 73bc45df30986a6c8ad8bb2156dc08662ee6a26b
+
+def even_or_odd(minimum, maximum, category):
+    even_counter = 0
+    odd_counter  = 0
+    for number in range(minimum, maximum + 1):
+        if category == 'even' and number % 2 == 0 : even_counter +=1
+        elif category == 'odd' and number % 2 != 0 : odd_counter +=1
+    print ('The number of odd numbers is', odd_counter)
+    print ('The number of even numbers is', even_counter)
+
+even_or_odd(2, 10, 'odd')
+
+
+def odd_even(minimum,maximum,category = None):
+    even_counter = 0
+    odd_counter = 0
+    for number in range(minimum, maximum + 1):
+        even_counter +=1 if number % 2 == 0  else 0
+        odd_counter +=1 if number % 2 != 0  else 0
+    print('The number of even numbers is', even_counter)
+    print('The number of odd numbers is', odd_counter)
+    
+odd_even(2,10,'even')
+
+
+
+
