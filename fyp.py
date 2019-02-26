@@ -21,7 +21,7 @@
 ##        
 ##odd_even(2,10,'even')
 ##print(len(p))
-
+''''
 def new_even_or_odd(minimum, maximum, category):
     if category == 'even':
         return len([number for number in range(minimum, maximum + 1) if number % 2 == 0])
@@ -30,6 +30,7 @@ def new_even_or_odd(minimum, maximum, category):
     return None
 
 new_even_or_odd(2, 10, 'even')
+'''
 
 
 def even_or_odd(minimum, maximum, category):
